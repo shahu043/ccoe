@@ -7,12 +7,6 @@ pipeline {
     }
     
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the Git repository using GitHub credentials
-                git credentialsId: env.GITHUB_CRED, url: 'https://github.com/shahu043/ccoe.git'
-            }
-        }
         stage('Install CDK') {
             steps {
                 // Install AWS CDK using npm
