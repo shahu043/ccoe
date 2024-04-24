@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the Git repository using GitHub credentials
-                git credentialsId: env.GITHUB_CRED, url: 'https://github.com/your/repository.git'
+                git credentialsId: env.GITHUB_CRED, url: 'https://github.com/shahu043/ccoe/'
             }
         }
         stage('Install CDK') {
