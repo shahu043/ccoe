@@ -10,7 +10,7 @@ pipeline {
         stage('Install CDK') {
             steps {
                 // Install AWS CDK using npm
-                sh 'npm install -g aws-cdk'
+                sh '/home/ubuntu/.nvm/versions/node/v16.14.0/bin/npm install -g aws-cdk'
             }
         }
         stage('Build and Deploy') {
